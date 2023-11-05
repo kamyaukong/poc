@@ -1,0 +1,41 @@
+.UserRegForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1{
+    color:rgb(77,1,77);
+    text-align: center;
+}
+
+form{
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: rebeccapurple;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ div span{
+    display: block;
+}
